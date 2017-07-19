@@ -34,7 +34,6 @@
 }
 
     [self setup];
-}
 
 -(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
