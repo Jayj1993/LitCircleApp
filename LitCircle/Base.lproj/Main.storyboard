@@ -999,8 +999,8 @@
                                                                 <action selector="btnSharePressed:" destination="eQt-AU-2TA" eventType="touchUpInside" id="X4d-uy-Yrf"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-cb-m1b">
-                                                            <rect key="frame" x="43" y="41" width="332" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="35 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-cb-m1b">
+                                                            <rect key="frame" x="55" y="40" width="332" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="s6A-T2-a6A"/>
                                                             </constraints>
@@ -1029,10 +1029,11 @@
                                                                 <action selector="btnAttendPressed:" destination="eQt-AU-2TA" eventType="touchUpInside" id="eW4-pf-83A"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUZ-oJ-ovk">
-                                                            <rect key="frame" x="133" y="10" width="47" height="30"/>
+                                                        <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUZ-oJ-ovk">
+                                                            <rect key="frame" x="142" y="9" width="30" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" title="Report"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <state key="normal" title="Report" image="Flag"/>
                                                             <connections>
                                                                 <action selector="btnReportPressed:" destination="eQt-AU-2TA" eventType="touchUpInside" id="KQu-Lv-QZf"/>
                                                             </connections>
@@ -2588,6 +2589,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Flag" width="40" height="40"/>
         <image name="addicon" width="40" height="40"/>
         <image name="back" width="17" height="29"/>
         <image name="backicon" width="15" height="26"/>
