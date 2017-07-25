@@ -13,3 +13,5 @@
 - (BOOL)focusNextTextField;
 - (void)scrollToActiveTextField;
 @end
+
+h-(NSArray*)getData:(NSString*)link;

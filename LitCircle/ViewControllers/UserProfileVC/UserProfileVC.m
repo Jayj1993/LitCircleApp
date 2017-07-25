@@ -22,6 +22,9 @@
 @end
 
 @implementation UserProfileVC
+- (CGAffineTransform)targetTransform  {
+    
+    return self.targetTransform; }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -226,6 +229,30 @@
         [Utilities showAlertView:@"" message:@"Something went wrong please try agian later"];
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
+}
+
+-(void)buttonReportPressed:(NSUInteger)tag{
+    LitPosts *post = [allAttendedParties objectAtIndex:tag];
+    NSURL *movieURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kServerVideoURL,post.video_name]];
+    self.movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+    self.movieController.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
+    self.movieController.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
+    self.movieController.moviePlayer.fullscreen = YES;
+    [self.movieController.moviePlayer prepareToPlay];
+    [self presentMoviePlayerViewControllerAnimated:self.movieController];
+    [self.movieController.moviePlayer play];
+}
+
+-(void)btnAttendedPressed:(NSUInteger)tag{
+    LitPosts *post = [allAttendedParties objectAtIndex:tag];
+    NSURL *movieURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kServerVideoURL,post.video_name]];
+    self.movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+    self.movieController.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
+    self.movieController.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
+    self.movieController.moviePlayer.fullscreen = YES;
+    [self.movieController.moviePlayer prepareToPlay];
+    [self presentMoviePlayerViewControllerAnimated:self.movieController];
+    [self.movieController.moviePlayer play];
 }
 
 @end

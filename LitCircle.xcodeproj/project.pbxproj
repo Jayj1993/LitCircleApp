@@ -1664,6 +1664,7 @@
 		};
 		E48807671DFC08EB00587536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EC68FC24D7D200A4706975 /* Pods-LitCircle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LitCircle/LitCircle.entitlements;
